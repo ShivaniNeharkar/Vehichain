@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.special{
+  color: #000040;
+  background-color: #ffffff;
+}
+.formStyling{
+  width:200px;
+  padding:10px;
+  border: 5px solid grey;
+  box-sizing: border-box;
+  background-color: #000080;
+  color: black; 
+}
+
+.button{
+
+  border: 5px solid black;
+  background-color: #000fff;
+  color: #ffffff;
+  font-size: 50px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+.formBackground{
+  
+  background-color: LightGray;
+  color:blue;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+figcaption{
+  position: absolute;
+  bottom: 2rem; 
+  margin: 0rem;
+  color: rgb(0, 0, 0);
+  font-size: 3em;
+
+}
+
+@media screen and (max-width: 768px){
+    figcaption{
+      position: inherit;
+      bottom: inherit;
+      margin: 0.25rem 0px;
+      font-size: inherit;
+      color: inherit;
+
+    }
+}
