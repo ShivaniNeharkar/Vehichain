@@ -1,0 +1,540 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: sans-serif;
+  /* background: #ffffff;   */
+ }
+
+body, html, .App, #root, .outer {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.outer .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.outer h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+
+/*
+.button1 {
+  background-color: #501b4b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 50px;
+  border-radius: 15px;
+
+}
+
+.button2 {
+  background-color: #ddc704;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 60px;
+
+}
+
+.button3 {
+  background-color: #007514;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 50px;
+  border-radius: 15px;
+
+} */
+
+/* .textField1 {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 130px;
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 25px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+
+} */
+
+/* .claimDate{
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 110px;
+}
+
+.damageDes{
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 185px;
+  display: inline-block;
+} */
+
+/* .uploadButton {
+  background-color: #501b4b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  padding-right: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+  cursor: pointer;
+  border-radius: 100px;
+  margin-left: 50px;
+} */
+
+/* .submitButton {
+  background-color: #007514;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-left: 230px;
+  width: 50%;
+} */
+
+/* .youAre {
+  margin-left: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+  padding-right: 8px;
+
+} */
+/*
+.dropDown {
+  margin-left: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+} */
+
+.startBtn {
+  margin-left: 217px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+
+
+.fancyInput {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*
+.addCar {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: sans-serif;
+}
+
+.container {
+  padding-left: 90px;
+  width: 90%;
+  margin: 50px auto;
+}
+.heading {
+  text-align: center;
+  background-color: black;
+  font-size: 100px;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 50%;
+
+
+}
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+
+}
+
+.card-header1 {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: rgb(240, 191, 191);
+}
+
+
+.card-body1 .btn {
+  display: block;
+  color: rgb(240, 191, 191);
+  text-align: center;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+
+}
+.card-header2 {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #25a35ac0, #017a25);
+  color: rgb(146, 245, 170);
+}
+
+
+.card-body2 .btn {
+  display: block;
+  color: rgb(146, 245, 170);
+  text-align: center;
+  background: linear-gradient(to right,  #25a35ac0, #017a25);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+
+}
+.card-header3 {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right,#417dff, #0122b4);
+  color: rgb(172, 212, 248);
+}
+
+
+.card-body3 .btn {
+  display: block;
+  color:  rgb(172, 212, 248);
+  text-align: center;
+  background: linear-gradient(to right, #417dff, #0122b4);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+
+}
+.card-header4 {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #d056f5, #740596);
+  color: rgb(218, 169, 247);
+}
+
+
+.card-body4 .btn {
+  display: block;
+  color: rgb(218, 169, 247);
+  text-align: center;
+  background: linear-gradient(to right, #d056f5, #740596);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+
+}
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 0px;
+    font-size: 40px;
+
+  }
+
+  .card {
+    width: 100%;
+    }
+
+}
+
+
+.InsuranceButtonPage{
+  background-image: url('./Magenta.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.InsuranceClaimPage{
+  background-image: url('./Laad.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+.RTOClaimPage{
+  background-image: url('./OrangeForm.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+.RTOButtonsInForm{
+
+  border: 5px solid  #ff416c;
+  color:   #ff416c;
+  background-color:#fff;
+  padding: 15px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 20px;
+  cursor: pointer;
+  border-radius: 80px;
+  width: 15%;
+}
+.OwnerClaimPage{
+  background-image: url('./GreenForm.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+.OwnerButtonsInForm{
+
+  border: 5px solid  #024920c0;
+  color:   #024920c0;
+  background-color:#fff;
+  padding: 15px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 20px;
+  cursor: pointer;
+  border-radius: 80px;
+  width: 15%;
+}
+.OwnerButtonPage{
+  background-image: url('./Green.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.automobileBackground{
+  background-image: url('./BlueForm.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.AutomobileButtonsInForm{
+
+  border: 5px solid  #0122b4;
+  color:   #0122b4;
+  background-color:#fff;
+  padding: 15px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 20px;
+  cursor: pointer;
+  border-radius: 80px;
+  width: 15%;
+}
+
+
+.InsuranceButtons{
+
+  border: 5px solid #740596;
+  color:  #740596;
+  background-color:#fff;
+  padding: 15px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 20px;
+  cursor: pointer;
+  border-radius: 80px;
+
+  margin-left: 30px;
+  width: 30%;
+}
+
+.InsuranceButtonsInForm{
+
+  border: 5px solid #740596;
+  color:  #740596;
+  background-color:#fff;
+  padding: 15px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 20px;
+  cursor: pointer;
+  border-radius: 80px;
+  width: 15%;
+}
+
+.InsuranceButtonPackage{
+
+  padding-top: 250px;
+
+}
+.OwnerButtons{
+
+  border: 5px solid #017a25;
+  color:#017a25;
+  background-color:#fff;
+  padding: 15px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 20px;
+  cursor: pointer;
+  border-radius: 80px;
+
+  margin-left: 30px;
+  width: 30%;
+}
+
+.OwnerButtonPackage{
+
+  padding-top: 300px;
+
+}
+
+.BlockHash{
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 100px;
+  color:black;
+}
+.titlePage{
+  font-size: 50px;
+  font-weight: bold;
+
+}
